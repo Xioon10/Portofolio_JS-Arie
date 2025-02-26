@@ -1,0 +1,38 @@
+.test_data,
+.test_header{
+    display: flex;
+}
+
+.test_data{
+    justify-content: space-between;
+    margin-bottom: var(--mb-1);
+}
+
+.test_img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: var(--mb-0-75);
+}
+
+.test_name{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
+
+.test_client{
+    font-size: var(--small-font-size);
+    color: var (--text-color-light);
+}
+
+.test_description{
+    margin-bottom: var(--mb-2-5);
+}
+
+.test_icon-star{
+    color: #f7f700;
+}
+
+.swiper .swiper-pagination-test{
+    bottom: 0;
+}

@@ -1,0 +1,162 @@
+/* HOME */
+.home_container{
+    gap: 1rem;
+}
+
+.home_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding-top: 3.5rem;
+    align-items: center;
+}
+
+.home_social{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.home_img{
+    width: 300px;
+    justify-self: center;
+    order: 2;
+}
+
+.home_data{
+    margin-left: 1.5rem;
+    order: 1;
+}
+
+.home_social{
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    order: 3;
+}
+
+.home_social-icon {
+    font-size: 2rem;
+    color: var(--first-color);
+    transition: .3s;
+}
+
+.home_social-icon:hover {
+    color: var(--first-color-alt);
+    transform: translateY(-4px);
+}
+
+@media screen and (max-width: 768px) {
+    .home_content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .home_data {
+        order: 2;
+    }
+    
+    .home_img {
+        order: 1;
+        margin: 0 auto;
+    }
+    
+    .home_social {
+        order: 3;
+    }
+}
+
+.home_title{
+    font-size: var(--big-font-size);
+}
+
+.home_subtitle{
+    font-size: var(--h3-font-size);
+    color: var(--text-color);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-75);
+}
+
+.home_description{
+    margin-bottom: var(--mb-2);
+}
+
+.home_scroll{
+    display: none;
+}
+
+.home_scroll-button{
+    color: var(--first-color);
+    transition: .3s;
+}
+
+.home_scroll-button:hover{
+    transform: translateY(.25rem);
+}
+
+.home_scroll-mouse{
+    font-size: 2rem;
+}
+
+.home_scroll-name{
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    margin-right: var(--mb-0-25);
+}
+
+.home_scroll-arrow{
+    font-size: 1.2rem;
+}
+
+
+/* TOMBOL */
+.button{
+    display: inline-block;
+    background-color: var(--first-color);
+    color: #fff;
+    padding: 1rem;
+    border-radius: .5rem;
+    font-weight: var(--font-medium);
+}
+
+.button:hover{
+    background-color: var(--first-color-alt);
+}
+
+.button_icon{
+    font-size: 1.25rem;
+    margin-left: var(--mb-0-5);
+    transition: .3s;
+}
+
+.button--white{
+    background-color: #fff;
+    color: var(--first-color);
+}
+
+.button--white:hover{
+    background-color: #fff;
+}
+
+.button--flex{
+    display: inline-flex;
+    align-items: center;
+}
+
+.button--small{
+    padding: .75rem 1rem;
+}
+
+.button--link{
+    padding: 0;
+    background-color: transparent;
+    color: var(--first-color);
+}
+
+.button--link:hover{
+    background-color: transparent;
+    color: var(--first-color);
+}
