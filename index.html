@@ -497,7 +497,7 @@
                             <div class="test_header">
                                 <img src="https://images.unsplash.com/photo-1536528947088-d655e462f4d3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="test_img">
                                 <div>
-                                    <h3 class="test_name">Sarah Johnson</h3>
+                                    <h3 class="test_name">Sarah Putri</h3>
                                     <span class="test_client">UI/UX Designer</span>
                                 </div>
                             </div>
@@ -522,7 +522,7 @@
                                 q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3" alt="" class="test_img">
 
                                 <div>
-                                    <h3 class="test_name">Michael Zhang</h3>
+                                    <h3 class="test_name">Saind Lucas</h3>
                                     <span class="test_client">Startup Founder</span>
                                 </div>
                             </div>
@@ -547,7 +547,7 @@
                                 w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGluZG9uZXNpYW4lMjBmYWNlfGVufDB8fDB8fHww" alt="" class="test_img">
 
                                 <div>
-                                    <h3 class="test_name">Lisa Anderson</h3>
+                                    <h3 class="test_name">Lisa</h3>
                                     <span class="test_client">Marketing Director</span>
                                 </div>
                             </div>
@@ -598,28 +598,36 @@
                         </div>
                     </div>
                 </div>
-                <form action="" id="contactForm" class="contact_form grid">
+                <form action="" class="contact_form grid" id="contactForm">
                     <div class="contact_inputs grid">
                         <div class="contact_content">
                             <label for="name" class="contact_label">Nama</label>
                             <input type="text" id="name" class="contact_input" placeholder="Masukkan nama anda">
                             <i class="uil uil-user contact_input-icon"></i>
                         </div>
+                        <div id="nameError" class="error-message"></div>
+                        
                         <div class="contact_content">
                             <label for="email" class="contact_label">Email</label>
                             <input type="email" id="email" class="contact_input" placeholder="Masukkan email anda">
                             <i class="uil uil-envelope contact_input-icon"></i>
                         </div>
+                        <div id="emailError" class="error-message"></div>
+                        
                         <div class="contact_content">
                             <label for="phone" class="contact_label">Nomor Telepon</label>
                             <input type="tel" id="phone" class="contact_input" placeholder="Masukkan nomor telepon anda">
                             <i class="uil uil-phone contact_input-icon"></i>
                         </div>
+                        <div id="phoneError" class="error-message"></div>
+                        
                         <div class="contact_content">
                             <label for="message" class="contact_label">Pesan</label>
                             <textarea name="message" id="message" cols="0" rows="7" class="contact_input" placeholder="Tuliskan pesan anda di sini"></textarea>
                             <i class="uil uil-comment-alt contact_textarea-icon"></i>
                         </div>
+                        <div id="messageError" class="error-message"></div>
+                    </div>
 
                     <div>
                         <button type="submit" class="button button--flex contact_button">

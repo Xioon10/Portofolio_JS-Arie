@@ -28,7 +28,7 @@
     border-radius: .5rem;
     padding: .75rem 1rem .25rem;
     position: relative;
-    margin-bottom: 1.5rem;
+    margin-bottom: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
 }
@@ -136,8 +136,11 @@ textarea.contact_input {
 
 .error-message {
     color: #ff6b6b;
-    font-size: 0.75rem;
-    margin-top: 0.25rem;
+    font-size: 0.8rem;
+    margin-top: -25px;
+    margin-bottom: 10px;
+    display: none;
+    padding-left: 10px;
 }
 
 /* Success styling */
@@ -160,4 +163,21 @@ textarea.contact_input {
 
 .contact_button:hover .button_icon {
     transform: translateX(4px);
+}
+
+.error-massage{
+    color: #ff6b6b;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    display: none;
+}
+
+/* Tambahan styling untuk validasi form */
+.input-error {
+    box-shadow: 0 0 0 2px #ff6b6b;
+}
+
+.contact_input:focus {
+    box-shadow: 0 0 0 2px var(--first-color);
+    outline: none;
 }
